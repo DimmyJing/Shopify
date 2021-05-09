@@ -100,9 +100,7 @@ c) The AOV after removing the outliers is 754.09
 
 # Question 2:
 
-a)
-
-I first get the shipper id that corresponds to Speedy Express,
+a) I first get the shipper id that corresponds to Speedy Express,
 then I count the number of orders that has that shipper id.
 
 ```sql
@@ -117,9 +115,7 @@ WHERE ShipperID = (
 
 54 orders were shipped by Speedy Express in total
 
-b)
-
-I first get a table of employee id and the number of orders they
+b) I first get a table of employee id and the number of orders they
 have done. Then I find the maximum row within that table. Then
 I select the employee id from that row. Then I select the LastName
 field from the Employees table that matches the EmployeeID.
@@ -142,9 +138,7 @@ WHERE EmployeeID IN (
 
 The last name of the employee with the most orders is Peacock
 
-c) 
-
-I first get the CustomerIDs that correspond to the customers in Germany.
+c) I first get the CustomerIDs that correspond to the customers in Germany.
 Then I get all the orders that originated from those customers by matching the
 customer id. Then I create a new table from the orders that matches the OrderID.
 The new table consists of ProductID and the sum of their quantities. Then I
